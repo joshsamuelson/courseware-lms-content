@@ -13,3 +13,8 @@ file { '/etc/bash.bash_logout':
 file { '/etc/puppetlabs/puppet/environments':
   ensure => directory,
 }
+file { '/etc/puppetlabs/puppet/modules':
+  ensure  => directory,
+  recurse => true,
+  source  => 'puppet:///modules/lms/hiera/modules',
+}
