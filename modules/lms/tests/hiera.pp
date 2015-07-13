@@ -18,3 +18,7 @@ file { '/etc/puppetlabs/puppet/modules':
   recurse => true,
   source  => 'puppet:///modules/lms/hiera/modules',
 }
+file { '/root/users.pp':
+  ensure => present,
+  source => 'puppet:///modules/lms/hiera/labs/users.pp',
+}
