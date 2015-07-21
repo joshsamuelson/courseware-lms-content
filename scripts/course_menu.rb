@@ -42,6 +42,7 @@ courses = {
   'Managing Puppet Code'                       => 'code.pp',
   'Infrastructure Design Using Puppet Modules' => 'infrastructure.pp',
   'Troubleshooting'                            => 'troubleshooting.pp',
+  'Beaker' => 'beaker.pp'
 }
 courses = courses.sort_by{|k,v|k}
 
