@@ -1,3 +1,5 @@
+# This would normally be the aio_agent_version fact, but that is installed by the puppet_enterprise module
+# Since we're just installing the agent we'll use the puppetversion fact instead
 $codedir = versioncmp('4.0.0',$puppetversion) ? {
   1       => '/etc/puppetlabs/puppet',
   default => '/etc/puppetlabs/code'
