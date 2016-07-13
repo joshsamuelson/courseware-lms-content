@@ -42,7 +42,6 @@ Instructions
 <div class="instruction-content" markdown="1">
 <!-- Step by step instructions -->
 <!-------------------------------->
-## Exercises ##
 
 1.  Execute the `puppet resource` command to query the `user`s on your system.
 
