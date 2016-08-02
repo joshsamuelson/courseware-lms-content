@@ -8,8 +8,12 @@
   margin: 0;
 }
 
+.course-pathway-consumption #user-content {
+  padding: 90px 0 0 0;
+}
+
 #user-content > .content.container,
-#user-content * .content { 
+#user-content * #lesson { 
   /* Viewable hight minus header and footer */
   height: calc(100vh - 171px);
   padding: 0 10px;
@@ -97,12 +101,21 @@ iframe {
     display: block;
     overflow-y: visible;
   }
-  #user-content > .content.container,
-  #user-content * .content { 
-    /* Viewable hight minus header and footer */
+
+  /* Clear fancy styling */
+  .course-pathway-consumption #user-content {
+    padding: 0;
+  }
+  #user-content > .content.container {
+    height: 100%;
+    position: static;
+    padding-bottom: 90px;
+  }
+  #user-content * #lesson { 
     height: 100%;
     position: static;
   }
+
 
   .row-offcanvas-right {
     right: 0;
