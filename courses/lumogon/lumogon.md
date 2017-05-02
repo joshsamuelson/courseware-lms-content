@@ -38,7 +38,7 @@ timeline([1000,2000,3000,4000],"slide1")
 </li>
 
 <!-- 
-Lumogon is a tool for inspecting, reporting on, and analyizing your container applications and exposing as much information as possible about them.
+Lumogon is an open source tool maintained by Puppet, for inspecting, reporting on, and analyizing your container applications.
 In this course you'll learn how Lumogon works, how to install it, and some basic usage.
 -->
 
@@ -230,7 +230,7 @@ audio("slide6")
 <!--
 In summary, it's hard to find much information about what's actually going on inside containers.
 Lumogon is an open source project, maintained by Puppet, that solves this problem by providing detailed information about your containers.
-You can install Lumogon with a single docker command `docker pull puppet/lumogen`, and run it with a docker run command.
+You can install Lumogon with a single docker command `docker pull puppet/lumogon`, and run it with a docker run command.
 Lumogon outputs JSON, so you might want to use an external tool like `jq` to make it more human readable.
 -->
 
