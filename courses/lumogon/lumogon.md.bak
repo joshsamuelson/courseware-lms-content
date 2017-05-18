@@ -13,12 +13,12 @@
 !SLIDE slide1
 <script> 
 audio("slide1")
-timeline([12000,14000,15300],"slide1")
+timeline([1000,2000,3000,4000],"slide1")
 </script>
 
 # Lumogon
 
-## Lumogon is a tool for inspecting, reporting on, and analyzing your container applications.
+## Lumogon is a tool for inspecting, reporting on, and analyizing your container applications.
 
 <ul>
 <li class="time1">
@@ -38,7 +38,7 @@ timeline([12000,14000,15300],"slide1")
 </li>
 
 <!-- 
-Lumogon is an open source tool created by Puppet, for inspecting, reporting on, and analyzing your container applications.
+Lumogon is an open source tool created by Puppet, for inspecting, reporting on, and analyizing your container applications.
 In this course you'll learn how Lumogon works, how to install it, and some basic usage.
 -->
 
@@ -80,7 +80,7 @@ timeline([1000,6000,20000,26000],"slide2")
 <!--
 Containerization provides a revolutionary way to package and ship software by ensuring a consistent environment from development through production.
 Unfortunately, along with this benefit comes a serious drawback. Because containers are treated as a black box, it's very hard to find out what's inside.
-This makes auditing really difficult and means you're never quite sure that you're infrastructure is secure when the next security vulnerability is discovered.
+This makes auditing really difficult and means you're never quite sure that you're infrastructure is secure when the next security vulerabilty is discovered.
 -->
 
 !SLIDE slide3
@@ -123,7 +123,7 @@ timeline([5000,11000,15000,17000],"slide3")
 <!--
 Lumogon solves this problem by letting you look inside your containers and expose as much information as possible.
 You can expose not only information about the container itself but also get insight into what's running inside it.
-Lumogon also lets you discover things like packages installed within a container even if they aren't running.
+Lumogon also gives you insight into things like packages installed within a container even if they aren't running.
 -->
 
 !SLIDE slide4
@@ -171,7 +171,7 @@ Finally, pass in the command "scan" and the name of the container to be scanned.
 !SLIDE slide5
 <script> 
 audio("slide5")
-timeline([3000,8000,16500,19000,29000],"slide5")
+timeline([3000,8000,16500,19000],"slide5")
 </script>
 
 # Lumogon output
@@ -205,22 +205,16 @@ docker run --rm  -v /var/run/docker.sock:/var/run/docker.sock puppet/lumogon sca
       },
       "reportid": "f3e77b7b-518f-43f9-a97d-4fe6e17821e7",
       "containers": {
+        "5f65a27841262926bc87f57b613e6548e684e29d2c198263fdc145da78fcc740": {
         ...
 
 .break
 
 </div>
-<div class="row align-center time5">
-<div class="col offset-1"
-
-## https://stedolan.github.io/jq
-
-</div>
-</div>
 </div>
 </div>
 <!--
-Lumogon scan returns output in JSON format, which is very readable by machines but can be difficult for humans.
+Lumogon returns output in JSON format, which is very readable by machines but can be difficult for humans.
 You might want to save the results to a file to make them easier to format and read.
 For this example, we'll use the `jq` utility, which is available for most major operating systems.
 
@@ -232,20 +226,6 @@ Passing the results into `jq .` does some nice syntax highlighting and formattin
 <script> 
 audio("slide6")
 timeline([2250,3500,9000,18000,23000,26000],"slide6")
-</script>
-
-# Web reporter
-
-<!--
-If you'd prefer something a bit more human readable, you can use the Lumogon `report` command instead
-of `scan` 
--->
-
-
-!SLIDE slide7
-<script> 
-audio("slide7")
-timeline([2250,3500,9000,18000,23000,26000],"slide7")
 </script>
 
 
@@ -289,7 +269,7 @@ timeline([2250,3500,9000,18000,23000,26000],"slide7")
 In summary, it's hard to find much information about what's actually going on inside containers.
 Lumogon is an open source project, created by Puppet, that solves this problem by providing detailed information about your containers.
 You can install Lumogon with a single docker command `docker pull puppet/lumogon`, and run it with a docker run command.
-Lumogon scan outputs JSON, so you might want to use an external tool like `jq` to make it more human readable.
+Lumogon outputs JSON, so you might want to use an external tool like `jq` to make it more human readable.
 -->
 
 !SLIDE[bg=_images/background.png] center inverse

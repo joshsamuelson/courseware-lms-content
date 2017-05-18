@@ -1,0 +1,9 @@
+{
+  "name": "lumogon",
+  "sections": [
+      "lumogon.md"
+  ],
+  "feedback": false,
+  "markdown": "commonmarker",
+  "parser": "v2"
+}
